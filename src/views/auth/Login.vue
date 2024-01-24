@@ -25,7 +25,7 @@
         </v-card-text>
 
         <v-card-text>
-            <RemoteComponent2 @authenticated="authenticated" />
+            <RemoteComponent2 />
         </v-card-text>
     </v-card>
 </template>
@@ -34,7 +34,7 @@
     import { defineAsyncComponent } from 'vue';
     import 'vuetify/lib/styles/main.sass'; // Manually import Vuetify styles
     const RemoteComponent = defineAsyncComponent(() => import('remote-app/LoginForm'));
-    const RemoteComponent2 = defineAsyncComponent(() => import('remote-app/LoginForm2'));
+    const RemoteComponent2 = defineAsyncComponent(() => import('remote-app/Hello'));
 
     export default {
         name: 'Login',
