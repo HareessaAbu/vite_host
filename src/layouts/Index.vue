@@ -6,7 +6,7 @@
 
         <v-footer color="secondary" dark>
             <v-col class="text-center" cols="12">
-                Paythr © {{ new Date().getFullYear() }} Alle rechten voorbehouden
+                Example © {{ new Date().getFullYear() }} Alle rechten voorbehouden
             </v-col>
         </v-footer>
 

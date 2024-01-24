@@ -14,7 +14,7 @@
         </core-view>
 
         <core-footer>
-            Paythr © {{ new Date().getFullYear() }} Alle rechten voorbehouden
+            Example © {{ new Date().getFullYear() }}
         </core-footer>
 
         <!-- <core-snackbar /> -->
