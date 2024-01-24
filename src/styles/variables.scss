@@ -1,0 +1,29 @@
+$border-radius-root: 1rem;
+$data-table-expanded-content-box-shadow: inset unset, inset unset !default;
+
+@import '~vuetify/lib/styles/main.sass';
+
+// Add custom gap utilities
+// $utilities: map-deep-merge(
+//   (
+//     "gap": (
+//       responsive: true,
+//       property: gap,
+//       class: ga,
+//       values: $spacers
+//     ),
+//     "gap-x": (
+//       responsive: true,
+//       property: column-gap,
+//       class: gx,
+//       values: $spacers
+//     ),
+//     "gap-y": (
+//       responsive: true,
+//       property: row-gap,
+//       class: gy,
+//       values: $spacers
+//     )
+//   ),
+//   $utilities
+// );

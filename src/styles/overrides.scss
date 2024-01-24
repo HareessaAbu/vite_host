@@ -1,0 +1,91 @@
+/* Remove uppercase from every element like buttons, tab headers, etc. */
+* {
+  text-transform: none !important;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-move {
+  cursor: move;
+}
+
+.cursor-grab {
+  cursor: grab;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.top-auto {
+  top: auto !important;
+}
+
+.v-dialog {
+  margin: 12px !important;
+}
+
+.fill-width {
+  width: 100%;
+}
+
+.vertical-align-top {
+  vertical-align: top;
+}
+
+// Shrink the invisible input in v-select components
+div[role=button] .v-select__selections > input:not(:only-child) {
+  flex: 0 0 !important;
+}
+
+.border-top {
+  border-top: thin solid rgba(0, 0, 0, 0.12);
+}
+
+.border-full {
+  border: thin solid rgba(0, 0, 0, 0.12); 
+}
+
+.debug-message {
+  position: fixed;
+  left: -50vw;
+  right: -75vw;
+  height: 100vh;
+  overflow: hidden;
+
+  font-size: 300pt;
+  color: #d60b52;
+  opacity: .1;
+  line-height: 1.2;
+
+  > span {
+    rotate: -30deg;
+    display: inline-block;
+  }
+}
+
+.hide-system-icon input[type="time"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
