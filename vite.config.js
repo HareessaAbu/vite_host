@@ -43,7 +43,7 @@ export default defineConfig({
       name: 'host-app',
       filename: 'remoteFile.js',
       remotes: {
-        'remote-app': "http://127.0.0.1:8090/assets/remoteFile.js",
+        'remote-app': "http://127.0.0.1:8094/assets/remoteFile.js",
       },
       shared: {
         'vuetify':{

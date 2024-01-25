@@ -10,6 +10,7 @@ import * as directives from 'vuetify/directives';
 import store from './store';
 import 'vuetify/dist/vuetify.min.css'
 import 'vuetify/lib/styles/main.sass'; // Manually import Vuetify styles
+import '@/plugins/restapi';
 
 import('@/styles/overrides.scss');
 
