@@ -22,7 +22,7 @@
 
         <v-card-text>
             Remote Component 1:
-            <RemoteComponent @authenticated="authenticated" />
+            <RemoteComponent />
         </v-card-text>
     </v-card>
 </template>
@@ -37,9 +37,9 @@
         components: { RemoteComponent },
 
         methods: {
-            authenticated () {
-                this.$router.replace(this.$route.query.redirect || '/');
-            },
+            // authenticated () {
+            //     this.$router.replace(this.$route.query.redirect || '/');
+            // },
         },
     };
 </script>
