@@ -18,7 +18,7 @@
     "vue": "^3.3.11",
     "vue-router": "^4.2.5",
     "vuetify": "^3.4.10",
-    "vuex": "^4.0.0"
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@originjs/vite-plugin-commonjs": "^1.0.3",

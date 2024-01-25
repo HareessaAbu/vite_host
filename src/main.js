@@ -7,21 +7,13 @@ import VuetifyComponents from '@payoffice2.0/vuetify';
 import { createVuetify } from 'vuetify';
 import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
+import store from './store';
 import 'vuetify/dist/vuetify.min.css'
 import 'vuetify/lib/styles/main.sass'; // Manually import Vuetify styles
-// import Hello from './Hello.vue';
-// import Auth from 'remote-app/Auth'
-// import Login from 'remote-app/Login'
-// import LoginForm from 'remote-app/LoginForm'
 
 import('@/styles/overrides.scss');
 
 const app = createApp(App);
-
-// app.component('Hello', Hello);
-// app.component('Auth', Auth);
-// app.component('Login', Login);
-// app.component('LoginForm', LoginForm);
 
 const customLightTheme = {
   dark: false,
@@ -51,6 +43,7 @@ const vuetify = createVuetify({
   
 app.use(vuetify)
   .use(router)
+  .use(store)
   .use(VuetifyComponents);
 
 app.mount('#app');

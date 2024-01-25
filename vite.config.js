@@ -46,9 +46,15 @@ export default defineConfig({
         include: ['vuetify','vue','@payoffice2.0/vuetify'],
       },
       remotes: {
-        'remote-app': "http://127.0.0.1:8083/assets/remoteFile.js",
+        'remote-app': "http://127.0.0.1:8087/assets/remoteFile.js",
       },
-      shared: ['vue','vuetify','@payoffice2.0/vuetify'],
+      shared: {
+        'vuetify':{
+          singleton: true
+        },
+        'vue':{},
+        '@payoffice2.0/vuetify':{},
+      },
       optimization: {
           splitChunks: true,
       },
@@ -71,9 +77,9 @@ export default defineConfig({
         format: 'esm',
         entryFileNames: 'assets/[name].js',
         minifyInternalExports: false,
-        manualChunks: {
-          vuetify: ['vuetify'],
-        },
+        // manualChunks: {
+        //   vuetify: ['vuetify'],
+        // },
       },
     },
   },
